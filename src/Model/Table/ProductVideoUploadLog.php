@@ -39,4 +39,31 @@ class ProductVideoUploadLog
                     ->execute($parameters)
                     ->getGeneratedValue();
     }
+
+    public function selectCountWhereBrowseNodeIdEqualsAndProductVideoUploadLogCreatedIsNull(
+        int $browseNodeId
+    ): int {
+        $sql = '
+            select count(*) as `count`
+
+              from amazon.product
+
+              join amazon.product_video
+             using (product_id)
+
+              join amazon.browse_node_product
+             using (product_id)
+
+              join amazon.browse_node using (browse_node_id) left join amazon_you_tube.product_video_upload_log using (product_video_id)
+
+            where browse_node_id = ?
+              and amazon_you_tube.product_video_upload_log.created is null
+                ;
+        ';
+        $parameters = [
+            $browseNodeId,
+        ];
+        $array = $this->adapter->query($sql)->execute($parameters)->current();
+        return (int) $array['count'];
+    }
 }

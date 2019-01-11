@@ -24,6 +24,11 @@ class Module
     {
         return [
             'factories' => [
+                AmazonYouTubeService\BrowseNode\NumberOfVideosNotYetUploaded::class => function ($sm) {
+                    return new AmazonYouTubeService\BrowseNode\NumberOfVideosNotYetUploaded(
+                        $sm->get(AmazonYouTubeTable\ProductVideoUploadLog::class)
+                    );
+                },
                 AmazonYouTubeTable\ProductVideoUploadLog::class => function ($sm) {
                     return new AmazonYouTubeTable\ProductVideoUploadLog(
                         $sm->get('amazon-you-tube')

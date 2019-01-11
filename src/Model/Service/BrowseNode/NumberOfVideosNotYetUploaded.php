@@ -12,12 +12,12 @@ class NumberOfVideosNotYetUploaded
     }
 
     public function getNumberOfVideosNotYetUploaded(
-        AmazonEntity\BrowseNode $browseNodeEntity
+        string $browseNodeName
     ): int {
         return (int) $this
             ->productVideoUploadLogTable
-            ->selectCountWhereBrowseNodeIdEqualsAndProductVideoUploadLogCreatedIsNull(
-                $browseNodeEntity->getBrowseNodeId()
+            ->selectCountWhereBrowseNodeNameEqualsAndProductVideoUploadLogCreatedIsNull(
+                $browseNodeName
             );
     }
 }

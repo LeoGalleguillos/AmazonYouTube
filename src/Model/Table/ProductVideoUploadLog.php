@@ -40,11 +40,11 @@ class ProductVideoUploadLog
                     ->getGeneratedValue();
     }
 
-    public function selectCountWhereBrowseNodeIdEqualsAndProductVideoUploadLogCreatedIsNull(
-        int $browseNodeId
+    public function selectCountWhereBrowseNodeNameEqualsAndProductVideoUploadLogCreatedIsNull(
+        string $browseNodeName
     ): int {
         $sql = '
-            select count(*) as `count`
+            SELECT COUNT(*) AS `count`
 
               from amazon.product
 
@@ -54,14 +54,17 @@ class ProductVideoUploadLog
               join amazon.browse_node_product
              using (product_id)
 
-              join amazon.browse_node using (browse_node_id) left join amazon_you_tube.product_video_upload_log using (product_video_id)
+              join amazon.browse_node using (browse_node_id)
 
-            where browse_node_id = ?
-              and amazon_you_tube.product_video_upload_log.created is null
+              left
+              join amazon_you_tube.product_video_upload_log using (product_video_id)
+
+             where amazon.browse_node.name = ?
+               and amazon_you_tube.product_video_upload_log.created is null
                 ;
         ';
         $parameters = [
-            $browseNodeId,
+            $browseNodeName,
         ];
         $array = $this->adapter->query($sql)->execute($parameters)->current();
         return (int) $array['count'];

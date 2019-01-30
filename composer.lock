@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d812ccfa549833cac5fb0e71126ba65",
+    "content-hash": "91c7043a7aa92e968644fa879ec32794",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -92,6 +92,166 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
+            "name": "leo-galleguillos/amazon",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Amazon.git",
+                "reference": "668c148ec2d54fdcf08c732808058968550b848c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/668c148ec2d54fdcf08c732808058968550b848c",
+                "reference": "668c148ec2d54fdcf08c732808058968550b848c",
+                "shasum": ""
+            },
+            "require": {
+                "leo-galleguillos/hashtag": "dev-master",
+                "leo-galleguillos/image": "dev-master",
+                "leo-galleguillos/memcached": "dev-master",
+                "leo-galleguillos/string": "dev-master",
+                "leo-galleguillos/test": "dev-master",
+                "leo-galleguillos/video": "dev-master",
+                "zendframework/zend-db": "^2.9",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Amazon\\": "src/",
+                    "LeoGalleguillos\\AmazonTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-01-27T00:52:03+00:00"
+        },
+        {
+            "name": "leo-galleguillos/hashtag",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Hashtag.git",
+                "reference": "047c26910752341e98f9562bd4c99c9aeb698027"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Hashtag/zipball/047c26910752341e98f9562bd4c99c9aeb698027",
+                "reference": "047c26910752341e98f9562bd4c99c9aeb698027",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-db": "^2.9",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Hashtag\\": "src/",
+                    "LeoGalleguillos\\HashtagTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-04-12T21:33:40+00:00"
+        },
+        {
+            "name": "leo-galleguillos/image",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Image.git",
+                "reference": "dff1c14a43c65582650443cf226ac1523743361a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Image/zipball/dff1c14a43c65582650443cf226ac1523743361a",
+                "reference": "dff1c14a43c65582650443cf226ac1523743361a",
+                "shasum": ""
+            },
+            "require": {
+                "leo-galleguillos/test": "dev-master",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Image\\": "src/",
+                    "LeoGalleguillos\\ImageTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-11-04T03:56:55+00:00"
+        },
+        {
+            "name": "leo-galleguillos/memcached",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Memcached.git",
+                "reference": "b139aab7ca6c2841226c1bf8058e1f0ba11967eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Memcached/zipball/b139aab7ca6c2841226c1bf8058e1f0ba11967eb",
+                "reference": "b139aab7ca6c2841226c1bf8058e1f0ba11967eb",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-cache": "^2.7",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Memcached\\": "src/",
+                    "LeoGalleguillos\\MemcachedTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-10-26T00:44:12+00:00"
+        },
+        {
+            "name": "leo-galleguillos/string",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/String.git",
+                "reference": "d08f6f2414126d8e20d2bc276bc64b3dcbcce082"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/d08f6f2414126d8e20d2bc276bc64b3dcbcce082",
+                "reference": "d08f6f2414126d8e20d2bc276bc64b3dcbcce082",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\String\\": "src/",
+                    "LeoGalleguillos\\StringTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-01-29T21:15:53+00:00"
+        },
+        {
             "name": "leo-galleguillos/test",
             "version": "dev-master",
             "source": {
@@ -121,6 +281,38 @@
                 "MIT"
             ],
             "time": "2018-11-07T17:47:04+00:00"
+        },
+        {
+            "name": "leo-galleguillos/video",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Video.git",
+                "reference": "2e16c9ada7b59f5016105840a9dd9c00a992350b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Video/zipball/2e16c9ada7b59f5016105840a9dd9c00a992350b",
+                "reference": "2e16c9ada7b59f5016105840a9dd9c00a992350b",
+                "shasum": ""
+            },
+            "require": {
+                "leo-galleguillos/test": "dev-master",
+                "zendframework/zend-db": "^2.9",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Video\\": "src/",
+                    "LeoGalleguillos\\VideoTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-12-16T18:13:59+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -877,6 +1069,52 @@
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-08-06T20:24:11+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -924,6 +1162,54 @@
                 "psr"
             ],
             "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "time": "2017-10-23T01:57:42+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -1632,6 +1918,89 @@
                 "validate"
             ],
             "time": "2018-12-25T11:19:39+00:00"
+        },
+        {
+            "name": "zendframework/zend-cache",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-cache.git",
+                "reference": "4983dff629956490c78b88adcc8ece4711d7d8a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-cache/zipball/4983dff629956490c78b88adcc8ece4711d7d8a3",
+                "reference": "4983dff629956490c78b88adcc8ece4711d7d8a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "zendframework/zend-eventmanager": "^2.6.3 || ^3.2",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.3",
+                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
+            },
+            "provide": {
+                "psr/cache-implementation": "1.0",
+                "psr/simple-cache-implementation": "1.0"
+            },
+            "require-dev": {
+                "cache/integration-tests": "^0.16",
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-serializer": "^2.6",
+                "zendframework/zend-session": "^2.7.4"
+            },
+            "suggest": {
+                "ext-apc": "APC or compatible extension, to use the APC storage adapter",
+                "ext-apcu": "APCU >= 5.1.0, to use the APCu storage adapter",
+                "ext-dba": "DBA, to use the DBA storage adapter",
+                "ext-memcache": "Memcache >= 2.0.0 to use the Memcache storage adapter",
+                "ext-memcached": "Memcached >= 1.0.0 to use the Memcached storage adapter",
+                "ext-mongo": "Mongo, to use MongoDb storage adapter",
+                "ext-mongodb": "MongoDB, to use the ExtMongoDb storage adapter",
+                "ext-redis": "Redis, to use Redis storage adapter",
+                "ext-wincache": "WinCache, to use the WinCache storage adapter",
+                "ext-xcache": "XCache, to use the XCache storage adapter",
+                "mongodb/mongodb": "Required for use with the ext-mongodb adapter",
+                "mongofill/mongofill": "Alternative to ext-mongo - a pure PHP implementation designed as a drop in replacement",
+                "zendframework/zend-serializer": "Zend\\Serializer component",
+                "zendframework/zend-session": "Zend\\Session component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev",
+                    "dev-develop": "2.9.x-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Cache",
+                    "config-provider": "Zend\\Cache\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "autoload/patternPluginManagerPolyfill.php"
+                ],
+                "psr-4": {
+                    "Zend\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Caching implementation with a variety of storage options, as well as codified caching strategies for callbacks, classes, and output",
+            "keywords": [
+                "ZendFramework",
+                "cache",
+                "psr-16",
+                "psr-6",
+                "zf"
+            ],
+            "time": "2018-05-01T21:58:00+00:00"
         },
         {
             "name": "zendframework/zend-config",
@@ -2689,7 +3058,13 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "leo-galleguillos/test": 20
+        "leo-galleguillos/amazon": 20,
+        "leo-galleguillos/hashtag": 20,
+        "leo-galleguillos/image": 20,
+        "leo-galleguillos/memcached": 20,
+        "leo-galleguillos/string": 20,
+        "leo-galleguillos/test": 20,
+        "leo-galleguillos/video": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

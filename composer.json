@@ -2,7 +2,13 @@
     "name": "leo-galleguillos/amazon-you-tube",
     "license": "MIT",
     "require": {
+        "leo-galleguillos/amazon": "dev-master",
+        "leo-galleguillos/hashtag": "dev-master",
+        "leo-galleguillos/image": "dev-master",
+        "leo-galleguillos/memcached": "dev-master",
+        "leo-galleguillos/string": "dev-master",
         "leo-galleguillos/test": "dev-master",
+        "leo-galleguillos/video": "dev-master",
         "zendframework/zend-db": "^2.9",
         "zendframework/zend-test": "^3.1"
     },

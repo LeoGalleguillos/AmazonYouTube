@@ -29,6 +29,10 @@ class Module
                         $sm->get(AmazonYouTubeTable\ProductVideoUploadLog::class)
                     );
                 },
+                AmazonYouTubeService\YouTube\Video\Description::class => function ($sm) {
+                    return new AmazonYouTubeService\YouTube\Video\Description(
+                    );
+                },
                 AmazonYouTubeTable\ProductVideoUploadLog::class => function ($sm) {
                     return new AmazonYouTubeTable\ProductVideoUploadLog(
                         $sm->get('amazon-you-tube')

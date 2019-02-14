@@ -97,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/Amazon.git",
-                "reference": "5b968f3c044053f9559ac15b33f0aaabdde4812a"
+                "reference": "5a541b8d916d12a62b77fcf873160c84a2960cd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/5b968f3c044053f9559ac15b33f0aaabdde4812a",
-                "reference": "5b968f3c044053f9559ac15b33f0aaabdde4812a",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/5a541b8d916d12a62b77fcf873160c84a2960cd2",
+                "reference": "5a541b8d916d12a62b77fcf873160c84a2960cd2",
                 "shasum": ""
             },
             "require": {
@@ -126,7 +126,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-02-12T00:43:01+00:00"
+            "time": "2019-02-13T22:40:38+00:00"
         },
         {
             "name": "leo-galleguillos/hashtag",
@@ -227,12 +227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/String.git",
-                "reference": "a472328ce38a22b14e3e5a30feba78497513ebec"
+                "reference": "6414184b1489e73f4b69d2577cce7560bb8a7ebd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/a472328ce38a22b14e3e5a30feba78497513ebec",
-                "reference": "a472328ce38a22b14e3e5a30feba78497513ebec",
+                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/6414184b1489e73f4b69d2577cce7560bb8a7ebd",
+                "reference": "6414184b1489e73f4b69d2577cce7560bb8a7ebd",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-02-06T00:38:21+00:00"
+            "time": "2019-02-14T16:30:54+00:00"
         },
         {
             "name": "leo-galleguillos/test",
@@ -288,12 +288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/Video.git",
-                "reference": "2e16c9ada7b59f5016105840a9dd9c00a992350b"
+                "reference": "c774efc18fe09309ffa699c42cb5bac8700ff6ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/Video/zipball/2e16c9ada7b59f5016105840a9dd9c00a992350b",
-                "reference": "2e16c9ada7b59f5016105840a9dd9c00a992350b",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Video/zipball/c774efc18fe09309ffa699c42cb5bac8700ff6ac",
+                "reference": "c774efc18fe09309ffa699c42cb5bac8700ff6ac",
                 "shasum": ""
             },
             "require": {
@@ -312,7 +312,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-12-16T18:13:59+00:00"
+            "time": "2019-02-13T22:08:54+00:00"
         },
         {
             "name": "myclabs/deep-copy",

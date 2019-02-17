@@ -61,6 +61,7 @@ class BrowseNode
              using (product_video_id)
 
              where amazon_you_tube.product_video_upload_log.created is null
+               and amazon_you_tube.browse_node.active = 1
 
              group
                 by amazon_you_tube.browse_node.name

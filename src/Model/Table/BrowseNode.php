@@ -40,35 +40,36 @@ class BrowseNode
                     ->getGeneratedValue();
     }
 
-    public function selectBrowseNodeNameCount(): Generator
+    public function selectBrowseNodeIdBrowseNodeNameCount(): Generator
     {
         $sql = '
-            select amazon_you_tube.browse_node.name
-                 , count(*) as `count`
-              from amazon_you_tube.browse_node
+select amazon_you_tube.browse_node.browse_node_id
+     , amazon_you_tube.browse_node.name
+     , count(*) as `count`
+  from amazon_you_tube.browse_node
 
-              join amazon.browse_node
-             using (name)
+  join amazon.browse_node
+ using (name)
 
-              join amazon.browse_node_product
-                on amazon.browse_node_product.browse_node_id = amazon.browse_node.browse_node_id
+  join amazon.browse_node_product
+    on amazon.browse_node_product.browse_node_id = amazon.browse_node.browse_node_id
 
-              join amazon.product_video
-             using (product_id)
+  join amazon.product_video
+ using (product_id)
 
-              left
-              join amazon_you_tube.product_video_upload_log
-             using (product_video_id)
+  left
+  join amazon_you_tube.product_video_upload_log
+ using (product_video_id)
 
-             where amazon_you_tube.product_video_upload_log.created is null
-               and amazon_you_tube.browse_node.active = 1
+ where amazon_you_tube.product_video_upload_log.created is null
+   and amazon_you_tube.browse_node.active = 1
 
-             group
-                by amazon_you_tube.browse_node.name
+ group
+    by amazon_you_tube.browse_node.name
 
-             order
-                by `count` desc
-                 ;
+ order
+    by `count` desc
+     ;
         ';
         foreach ($this->adapter->query($sql)->execute() as $array) {
             yield $array;

@@ -45,6 +45,7 @@ class BrowseNode
         $sql = '
 select amazon_you_tube.browse_node.browse_node_id
      , amazon_you_tube.browse_node.name as `browse_node_name`
+     , max(you_tube.channel.channel_id) as `channel_id`
      , max(you_tube.app_channel.access_token) as `access_token`
      , max(you_tube.app_channel.access_token_expiration) as `access_token_expiration`
      , max(you_tube.app_channel.refresh_token) as `refresh_token`

@@ -40,16 +40,28 @@ class BrowseNode
                     ->getGeneratedValue();
     }
 
-    public function selectBrowseNodeIdBrowseNodeNameCount(): Generator
+    public function select(): Generator
     {
         $sql = '
 select amazon_you_tube.browse_node.browse_node_id
-     , amazon_you_tube.browse_node.name
+     , amazon_you_tube.browse_node.name as `browse_node_name`
+     , max(you_tube.app_channel.access_token) as `access_token`
+     , max(you_tube.app_channel.access_token_expiration) as `access_token_expiration`
+     , max(you_tube.app_channel.refresh_token) as `refresh_token`
      , count(*) as `count`
   from amazon_you_tube.browse_node
 
+  join amazon_you_tube.browse_node_channel
+    on amazon_you_tube.browse_node_channel.browse_node_id = amazon_you_tube.browse_node.browse_node_id
+
+  join you_tube.channel
+    on you_tube.channel.channel_id = amazon_you_tube.browse_node_channel.channel_id
+
+left join you_tube.app_channel
+    on you_tube.app_channel.channel_id = you_tube.channel.channel_id
+
   join amazon.browse_node
- using (name)
+    on amazon.browse_node.name = amazon_you_tube.browse_node.name
 
   join amazon.browse_node_product
     on amazon.browse_node_product.browse_node_id = amazon.browse_node.browse_node_id
@@ -65,7 +77,7 @@ select amazon_you_tube.browse_node.browse_node_id
    and amazon_you_tube.browse_node.active = 1
 
  group
-    by amazon_you_tube.browse_node.name
+    by amazon_you_tube.browse_node.browse_node_id
 
  order
     by `count` desc

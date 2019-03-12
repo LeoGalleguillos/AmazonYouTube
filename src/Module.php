@@ -33,6 +33,11 @@ class Module
                     return new AmazonYouTubeService\YouTube\Video\Description(
                     );
                 },
+                AmazonYouTubeService\YouTube\Video\Videos\NumberOfVideosUploadedToday::class => function ($sm) {
+                    return new AmazonYouTubeService\YouTube\Video\Videos\NumberOfVideosUploadedToday(
+                        $sm->get(AmazonYouTubeTable\ProductVideoUploadLog::class)
+                    );
+                },
                 AmazonYouTubeTable\BrowseNode::class => function ($sm) {
                     return new AmazonYouTubeTable\BrowseNode(
                         $sm->get('amazon-you-tube')

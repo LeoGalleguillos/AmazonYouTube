@@ -1,6 +1,8 @@
 <?php
 namespace LeoGalleguillos\AmazonYouTube\Model\Service\YouTube\Video\Videos;
 
+use DateTime;
+use DateTimeZone;
 use LeoGalleguillos\AmazonYouTube\Model\Table as AmazonYouTubeTable;
 
 class NumberOfVideosUploadedToday
@@ -16,6 +18,12 @@ class NumberOfVideosUploadedToday
      */
     public function getNumberOfVideosUploadedToday(): int
     {
-        return 0;
+        $dateTime = new DateTime();
+        $dateTime->setTimezone(new DateTimeZone('America/Los_Angeles'));
+        $dateTime->setTime(0, 0);
+
+        return $this->productVideoUploadLogTable->selectCountWhereCreatedGreaterThanOrEqualTo(
+            $dateTime
+        );
     }
 }

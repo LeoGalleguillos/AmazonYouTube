@@ -1,6 +1,7 @@
 <?php
 namespace LeoGalleguillos\AmazonYouTube\Model\Table;
 
+use DateTime;
 use Zend\Db\Adapter\Adapter;
 
 class ProductVideoUploadLog
@@ -65,6 +66,22 @@ class ProductVideoUploadLog
         ';
         $parameters = [
             $browseNodeName,
+        ];
+        $array = $this->adapter->query($sql)->execute($parameters)->current();
+        return (int) $array['count'];
+    }
+
+    public function selectCountWhereCreatedGreaterThanOrEqualTo(
+        DateTime $created
+    ): int {
+        $sql = '
+            SELECT COUNT(*) AS `count`
+              FROM `product_video_upload_log`
+             WHERE `created` >= ?
+                 ;
+        ';
+        $parameters = [
+            $created->format('Y-m-d h:i:s'),
         ];
         $array = $this->adapter->query($sql)->execute($parameters)->current();
         return (int) $array['count'];

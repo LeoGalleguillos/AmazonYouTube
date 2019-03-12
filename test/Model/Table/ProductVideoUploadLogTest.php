@@ -1,6 +1,7 @@
 <?php
 namespace LeoGalleguillos\AmazonYouTubeTest\Model\Table;
 
+use DateTime;
 use LeoGalleguillos\AmazonYouTube\Model\Table as AmazonYouTubeTable;
 use LeoGalleguillos\Test\TableTestCase;
 use Zend\Db\Adapter\Exception\InvalidQueryException;
@@ -15,14 +16,6 @@ class ProductVideoUploadLogTest extends TableTestCase
 
         $this->dropTable('product_video_upload_log');
         $this->createTable('product_video_upload_log');
-    }
-
-    public function testInstance()
-    {
-        $this->assertInstanceOf(
-            AmazonYouTubeTable\ProductVideoUploadLog::class,
-            $this->productVideoUploadTable
-        );
     }
 
     public function testInsert()
@@ -46,5 +39,15 @@ class ProductVideoUploadLogTest extends TableTestCase
                 substr($invalidQueryException->getMessage(), 0, 31)
             );
         }
+    }
+
+    public function testSelectCountWhereCreatedGreaterThanOrEqualTo()
+    {
+        $this->assertSame(
+            0,
+            $this->productVideoUploadTable->selectCountWhereCreatedGreaterThanOrEqualTo(
+                new DateTime()
+            )
+        );
     }
 }

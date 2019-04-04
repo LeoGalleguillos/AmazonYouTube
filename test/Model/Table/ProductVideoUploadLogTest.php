@@ -21,17 +21,17 @@ class ProductVideoUploadLogTest extends TableTestCase
     public function testInsert()
     {
         $this->assertSame(
-            $this->productVideoUploadTable->insert(12345, 'abcdefg'),
+            $this->productVideoUploadTable->insert(12345, 1, 'abcdefg'),
             1
         );
 
         $this->assertSame(
-            $this->productVideoUploadTable->insert(56789, 'abcdefg'),
+            $this->productVideoUploadTable->insert(56789, 2, 'abcdefg'),
             2
         );
 
         try {
-            $this->productVideoUploadTable->insert(12345, 'abcdefg');
+            $this->productVideoUploadTable->insert(12345, 3, 'abcdefg');
             $this->fail();
         } catch (InvalidQueryException $invalidQueryException) {
             $this->assertSame(

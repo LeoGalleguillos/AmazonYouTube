@@ -97,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/Amazon.git",
-                "reference": "e8f6047bc81f384de013355f4df8d3568125b297"
+                "reference": "5a5ad9ff9785a3cf80e4f7ac4ee2dbae39fe1eea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/e8f6047bc81f384de013355f4df8d3568125b297",
-                "reference": "e8f6047bc81f384de013355f4df8d3568125b297",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/5a5ad9ff9785a3cf80e4f7ac4ee2dbae39fe1eea",
+                "reference": "5a5ad9ff9785a3cf80e4f7ac4ee2dbae39fe1eea",
                 "shasum": ""
             },
             "require": {
@@ -126,7 +126,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-03-06T02:55:29+00:00"
+            "time": "2019-04-02T16:22:18+00:00"
         },
         {
             "name": "leo-galleguillos/hashtag",
@@ -227,12 +227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/String.git",
-                "reference": "b12c9262dd89dea958f13e3f1b4f8a5a24708c82"
+                "reference": "062fc424684e63ad69e99f183e432a39072e5b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/b12c9262dd89dea958f13e3f1b4f8a5a24708c82",
-                "reference": "b12c9262dd89dea958f13e3f1b4f8a5a24708c82",
+                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/062fc424684e63ad69e99f183e432a39072e5b43",
+                "reference": "062fc424684e63ad69e99f183e432a39072e5b43",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-02-26T08:31:18+00:00"
+            "time": "2019-04-01T03:22:37+00:00"
         },
         {
             "name": "leo-galleguillos/test",
@@ -257,12 +257,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/Test.git",
-                "reference": "287da595ae3dd7c75e1a52355453e8ca1c54189a"
+                "reference": "0ea1f67f70d706f08e9e382bea8ae178001e051b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/Test/zipball/287da595ae3dd7c75e1a52355453e8ca1c54189a",
-                "reference": "287da595ae3dd7c75e1a52355453e8ca1c54189a",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Test/zipball/0ea1f67f70d706f08e9e382bea8ae178001e051b",
+                "reference": "0ea1f67f70d706f08e9e382bea8ae178001e051b",
                 "shasum": ""
             },
             "require": {
@@ -280,7 +280,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-11-07T17:47:04+00:00"
+            "time": "2019-03-11T11:59:50+00:00"
         },
         {
             "name": "leo-galleguillos/video",
@@ -1773,16 +1773,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.10.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+                "reference": "82ebae02209c21113908c229e9883c419720738a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+                "reference": "82ebae02209c21113908c229e9883c419720738a",
                 "shasum": ""
             },
             "require": {
@@ -1794,7 +1794,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -1816,7 +1816,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -1827,20 +1827,20 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b"
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/1c42705be2b6c1de5904f8afacef5895cab44bf8",
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8",
                 "shasum": ""
             },
             "require": {
@@ -1867,7 +1867,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2017-04-07T12:08:54+00:00"
+            "time": "2019-04-04T09:56:43+00:00"
         },
         {
             "name": "webmozart/assert",

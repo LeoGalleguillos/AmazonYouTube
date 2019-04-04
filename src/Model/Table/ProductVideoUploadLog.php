@@ -19,20 +19,23 @@ class ProductVideoUploadLog
 
     public function insert(
         int $productVideoId,
+        int $youTubeChannelId,
         string $youTubeVideoId
     ): int {
         $sql = '
             INSERT
               INTO `product_video_upload_log` (
                        `product_video_id`
-                     , `youtube_video_id`
+                     , `you_tube_channel_id`
+                     , `you_tube_video_id`
                      , `created`
                    )
-            VALUES (?, ?, UTC_TIMESTAMP())
+            VALUES (?, ?, ?, UTC_TIMESTAMP())
                  ;
         ';
         $parameters = [
             $productVideoId,
+            $youTubeChannelId,
             $youTubeVideoId,
         ];
         return $this->adapter

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3933a9ff449dc69ff0b76545bdcd66f",
+    "content-hash": "3921aa4832ac0c5637ca0fe4a03688a8",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1353,16 +1353,16 @@
         },
         {
             "name": "leo-galleguillos/amazon",
-            "version": "v1.0.0",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/Amazon.git",
-                "reference": "a16e3a2684a7f770e341d72a6e5580d59929c0f9"
+                "reference": "48c30474e19b7e6f9ddd57ea0168460707ac19ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/a16e3a2684a7f770e341d72a6e5580d59929c0f9",
-                "reference": "a16e3a2684a7f770e341d72a6e5580d59929c0f9",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Amazon/zipball/48c30474e19b7e6f9ddd57ea0168460707ac19ce",
+                "reference": "48c30474e19b7e6f9ddd57ea0168460707ac19ce",
                 "shasum": ""
             },
             "require": {
@@ -1373,7 +1373,7 @@
                 "leo-galleguillos/memcached": "dev-master",
                 "leo-galleguillos/string": "dev-master",
                 "leo-galleguillos/test": "dev-master",
-                "leo-galleguillos/video": "dev-master"
+                "leo-galleguillos/video": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -1386,7 +1386,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2020-01-20T02:58:49+00:00"
+            "time": "2020-01-23T03:54:45+00:00"
         },
         {
             "name": "leo-galleguillos/hashtag",
@@ -1544,7 +1544,7 @@
         },
         {
             "name": "leo-galleguillos/video",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/Video.git",
@@ -3185,8 +3185,7 @@
         "leo-galleguillos/image": 20,
         "leo-galleguillos/memcached": 20,
         "leo-galleguillos/string": 20,
-        "leo-galleguillos/test": 20,
-        "leo-galleguillos/video": 20
+        "leo-galleguillos/test": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

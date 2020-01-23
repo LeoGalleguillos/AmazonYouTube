@@ -10,7 +10,7 @@
         "leo-galleguillos/memcached": "dev-master",
         "leo-galleguillos/string": "dev-master",
         "leo-galleguillos/test": "dev-master",
-        "leo-galleguillos/video": "dev-master"
+        "leo-galleguillos/video": "^1.0"
     },
     "autoload": {
         "psr-4": {

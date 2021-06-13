@@ -1,5 +1,5 @@
 CREATE TABLE `browse_node` (
-  `browse_node_id` int unsigned not null auto_increment,
+  `browse_node_id` bigint(10) unsigned not null auto_increment,
   `name` VARCHAR(255) NOT NULL,
   `active` tinyint(1) unsigned not null default 1,
   PRIMARY KEY (`browse_node_id`),

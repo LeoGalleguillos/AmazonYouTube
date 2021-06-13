@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class DescriptionTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->descriptionService = new AmazonYouTubeService\YouTube\Video\Description();
     }

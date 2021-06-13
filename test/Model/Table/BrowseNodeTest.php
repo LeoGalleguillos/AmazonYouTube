@@ -6,7 +6,7 @@ use LeoGalleguillos\Test\TableTestCase;
 
 class BrowseNodeTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->browseNodeTable = new AmazonYouTubeTable\BrowseNode(
             $this->getAdapter()

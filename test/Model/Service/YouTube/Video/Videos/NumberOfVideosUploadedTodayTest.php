@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class NumberOfVideosUploadedTodayTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->productVideoUploadLogTableMock = $this->createMock(
             AmazonYouTubeTable\ProductVideoUploadLog::class

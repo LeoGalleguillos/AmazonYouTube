@@ -8,7 +8,7 @@ use Zend\Db\Adapter\Exception\InvalidQueryException;
 
 class ProductVideoUploadLogTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->productVideoUploadTable = new AmazonYouTubeTable\ProductVideoUploadLog(
             $this->getAdapter()
